@@ -24,3 +24,15 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    gap: 10px;
+}
+
+.form > * {
+    flex-basis: calc(33.33%);
+}
+
