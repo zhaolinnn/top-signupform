@@ -1,29 +1,86 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Norse-Bold.otf);
+}
+
+a {
+    color: white;
+}
+
 body {
     display: flex;
     margin: 0;
+    background-color: #f9f9f9;
 }
 
 
 .left {
     background-image: url("unsplash.jpg");
     background-size: cover;
-    width: 50vw;
+    width: 33vw;
     height: 100vh;
 }
 
-
 .imgtext {
+    width: 33vw;
+    height: 100vh;
     display: flex;
+    /* align-items vs justify-content */
+    align-items: center; 
     flex-direction: column;
-    position: absolute;
     color: white;
 }
 
+.title-text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+    /* centers both text and img but since img is so big it doesnt matter */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* you need this for some reason to keep it from falling apart from width??? */
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+}
+
+.logo-text {
+    font-family: Norse-Bold;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.credit {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    font-size: 10px;
+    color: white;
+}
 
 .right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 66vw;
+    
 }
+
+.top {
+    padding-right: 100px;
+}
+
+.top, .mid, .bot {
+    padding-left: 40px;
+}
+
+.mid {
+    background-color: rgba(250, 250, 250, 0.80);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.363);
+    padding-bottom: 20px;
+}
+
+
 
 .form {
     display: flex;
